@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Bubblegum Sans", "Comic Sans MS", cursive, sans-serif;
+  background-color: #ffe0f0;
+  background-image: radial-gradient(black 1px, transparent 1px);
+  background-size: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.weatherForm {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  border: 5px solid black;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px #ffd700;
+}
+
+.inputCity {
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #00e5ff;
+  border: 3px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submitButton:hover {
+  background-color: #ff007f;
+  color: white;
+}
+
+.weatherCard {
+  background-color: #ff5e5b;
+  padding: 40px;
+  text-align: center;
+  min-width: 300px;
+  border: 7px solid black;
+  border-radius: 35px;
+  box-shadow: 12px 12px 0px black;
+  color: white;
+}
+
+.cityName {
+  margin: 0;
+  font-size: 2.2rem;
+  background: #ffd700;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 3px solid black;
+  text-transform: capitalize;
+}
+
+.cityTemp {
+  font-size: 5rem;
+  margin: 15px 0;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 4px 4px 0px black;
+}
+
+.weatherDescription {
+  margin: 0;
+  font-size: 1.4rem;
+  background: white;
+  color: black;
+  padding: 5px 15px;
+  border: 3px solid black;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+#loading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: yellow;
+  -webkit-text-stroke: 1px black;
+  animation: wobble 0.5s infinite;
+}

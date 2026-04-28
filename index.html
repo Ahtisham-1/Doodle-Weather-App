@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="weatherForm">
+      <input type="text" class="inputCity" />
+      <button type="submit" class="submitButton">Get Weather</button>
+    </form>
+
+    <div class="weatherCard">
+      <p id="loading" style="display: none;">Loading...</p>
+      <h1 class="cityName">City Name</h1>
+      <h2 class="cityTemp">City Temprature</h2>
+      <h2 class="weatherDescription">Weather Description</h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
